@@ -10,6 +10,12 @@
 
             <h1>{{ names.title }}</h1>
             <br>
+            <br>
+            <h2>{{ names.user.name }}</h2>
+            <img ng-src="{{ names.user.avatar_url }}"/>
+            <p ng-bind-html="names.user.bio | unsafe"></p>
+            <br>
+            <br>
             <img ng-src="{{ names.images.normal }}"/>
             <br>
             <br>
